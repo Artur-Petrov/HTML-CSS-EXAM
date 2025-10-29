@@ -12,9 +12,10 @@ nav{
     gap: 300px;
     padding: 0 95px;
     box-shadow:  4px 6px 13px rgba(214.62,214.62,214.62,0.25);
-    background-color: white;
+    background-color: #EFF0F3;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 ul{
     display: flex;
@@ -45,13 +46,11 @@ ul a{
     padding: 10px 17px;
 }
 /*--------------------------------main(Hi-Dasteen)--------------------------------------*/
-main{
-    padding: 271px 95px 0 95px;
-}
 .first-section{
+    padding: 271px 95px 263px 95px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 263px;
+    background-color: #EFF0F3;
 }
 h1{
     text-transform: capitalize;
@@ -108,4 +107,107 @@ input[type="email"]::placeholder{
     font-size: 20px;
     opacity: 0.5;
 }
-
+/*--------------------------------main(second-section)--------------------------------------*/
+.second-section{
+    height: 500px;
+    background-color: #EFF0F3;
+    padding: 0 95px 0 95px;
+}
+.cards-header{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 69px 0 55px 0;
+}
+.cards-header h5{
+    font-size: 24px;
+    font-weight: 700;
+}
+.cards-header a{
+    font-size: 22px;
+    font-weight: 700;
+}
+.cards-header-icon{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.category-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+}
+.category-card{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 220px;
+    height: 280px;
+    box-shadow:  4px 6px 13px rgba(214.62,214.62,214.62,0.25);
+    background-color: #FFFFFE;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    gap: 25px;
+    padding-left: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.category-card:hover{
+    background-color: #6246EA;
+    color: #FFFFFE;
+}
+/*--------------------------------main(cards section)--------------------------------------*/
+.third-section{
+    background-color: #FFFFFE;
+    padding: 0 95px 0 95px;
+}
+.four-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.four-card{
+    width: 300px;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 80px;
+}
+.img-and-text img{
+    padding-bottom: 25px;
+}
+.img-and-text a{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.avatar-and-text{
+    font-size: 14px;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 72px 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "avatar name name"
+    "avatar time estimate";
+}
+.avatar{
+    grid-area: avatar;
+}
+.name{
+    grid-area: name;
+}
+.time{
+    grid-area: time;
+}
+.estimate{
+    grid-area: estimate;
+    text-transform: capitalize;
+}
