@@ -107,8 +107,8 @@ input[type="email"]::placeholder{
     font-size: 20px;
     opacity: 0.5;
 }
-/*--------------------------------main(second-section)--------------------------------------*/
-.second-section{
+/*--------------------------------main(category-section)--------------------------------------*/
+.category-section{
     height: 500px;
     background-color: #EFF0F3;
     padding: 0 95px 0 95px;
@@ -160,9 +160,9 @@ input[type="email"]::placeholder{
     color: #FFFFFE;
 }
 /*--------------------------------main(cards section)--------------------------------------*/
-.third-section{
+.feature-section{
     background-color: #FFFFFE;
-    padding: 0 95px 0 95px;
+    padding: 0 95px 80px 95px;
 }
 .four-cards{
     display: flex;
@@ -174,11 +174,11 @@ input[type="email"]::placeholder{
     width: 300px;
     height: 425px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    gap: 80px;
+    /*gap: 80px;*/
 }
 .img-and-text img{
     padding-bottom: 25px;
@@ -189,25 +189,26 @@ input[type="email"]::placeholder{
     text-transform: capitalize;
 }
 .avatar-and-text{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.time-and-name{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 0 10px 15px;
     font-size: 14px;
     font-weight: 400;
-    display: grid;
-    grid-template-columns: 72px 1.5fr 1.5fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "avatar name name"
-    "avatar time estimate";
 }
-.avatar{
-    grid-area: avatar;
-}
-.name{
-    grid-area: name;
+.dot{
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0 10px 13px 10px;
 }
 .time{
-    grid-area: time;
-}
-.estimate{
-    grid-area: estimate;
-    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
 }
