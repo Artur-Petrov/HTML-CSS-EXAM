@@ -161,7 +161,7 @@ input[type="email"]::placeholder{
     color: #FFFFFE;
 }
 /*--------------------------------main(feature-section)--------------------------------------*/
-.feature-section{
+.main-size-color{
     background-color: #FFFFFE;
     padding: 0 95px 80px 95px;
 }
@@ -212,21 +212,6 @@ input[type="email"]::placeholder{
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 10px;
-}
-/*--------------------------------main(css-section)--------------------------------------*/
-.css-section{
-    background-color: #FFFFFE;
-    padding: 0 95px 80px 95px;
-}
-/*--------------------------------main(js-section)--------------------------------------*/
-.js-section{
-    background-color: #FFFFFE;
-    padding: 0 95px 80px 95px;
-}
-/*--------------------------------main(react-js-section)--------------------------------------*/
-.react-js-section{
-    background-color: #FFFFFE;
-    padding: 0 95px 80px 95px;
 }
 .Article-btn{
     display: flex;
