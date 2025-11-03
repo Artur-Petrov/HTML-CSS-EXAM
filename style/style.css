@@ -112,13 +112,14 @@ input[type="email"]::placeholder{
     height: 500px;
     background-color: #EFF0F3;
     padding: 0 95px 0 95px;
+    margin-bottom: 82px;
 }
 .cards-header{
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
     font-weight: 400;
-    padding: 69px 0 55px 0;
+    padding: 0 0 55px 0;
 }
 .cards-header h5{
     font-size: 24px;
